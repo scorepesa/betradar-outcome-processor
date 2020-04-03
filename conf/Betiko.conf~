@@ -1,0 +1,45 @@
+# Log settings
+InfoLogFile = /home/dennis/JavaProjects/apps/logs/betiko_info.log
+InfoLogLevel = DEBUG
+ErrorLogFile = /home/dennis/JavaProjects/apps/logs/betiko_error.log
+ErrorLogLevel = ERROR
+FatalLogFile = /home/dennis/JavaProjects/apps/logs/betiko_fatal.log
+FatalLogLevel = FATAL
+TimerLogFile = /home/dennis/JavaProjects/apps/logs/betiko_timer.log
+TimerLogLevel = TIMER
+FilesDir = /home/dennis/JavaProjects/apps/logs
+
+# Database settings - betiko settings
+DbName = betika_new
+DbUserName = root
+DbPassword = frogmanxtension
+DbHost = localhost
+DbPort = 3306
+DbPoolName = betiko_pool
+MaximumConnections = 100
+
+
+# Application settings
+IgnoreQueue = false
+QueueThreshold = 4000
+BucketSize = 1000
+SleepTime = 1
+NumberOfThreads = 200
+
+#Rabbit MQ Configs
+RabbitHost = localhost
+RabbitUsername = guest
+RabbitPassword = guest
+RabbitPort =5672
+RabbitVhost=/
+QueueNames = BULK,TEXT,CONTENT
+ConsumerQueue = BETIKA_OUTCOMES_QUEUE 
+ConsumerQueue2 = BETIKA_OUTCOMES_QUEUE2 
+ChannelsPerQueue=5
+
+#Roamtech
+roamtech_virtual_id=6
+
+#Message configs
+message_short_code=29090
+
